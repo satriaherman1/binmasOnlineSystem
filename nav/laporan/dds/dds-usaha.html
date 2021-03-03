@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../../style/index.css">
 
     <link rel="icon" href="../../../img/logo/binmas.svg" sizes="40x40" type="image/svg">
-    <!-- md bootstrap -->
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
@@ -57,23 +57,20 @@
             </div>
         </div>
     </nav>
+    <!--End Navbar-->
 
-
     <br>
     <br>
     <br>
     <br>
-    <!-- main -->
+    
     <main class="mb-3 mt-2">
         <div class="container">
-
-
             <form action="">
                 <h4 class="text-center mb-4">Form Kunjungan Tempat Usaha</h4>
 
                 <!-- Tempat Usaha -->
                 <h5><li>Tempat Usaha</li></h5>
-
                 <hr>
                 <div class="row">
                     <div class="col-md">
@@ -84,17 +81,18 @@
                     
                     <div class="col-md">
                         <label for="" class="mt-3 mb-2">Jam Kerja Operasional</label>
-                        <input type="text" placeholder="jam kerja masuk - jam kerja pulang" class="form-control"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="row" style="padding-inline: 12px;">
+                            <input type="time" placeholder="jam kerja masuk" class="form-control col"
+                                id="exampleInputEmail1" aria-describedby="emailHelp"> &nbsp;&nbsp;
+                            <input type="time" placeholder="jam kerja pulang" class="form-control col"
+                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
                     </div>
-
                 </div>
-
                 <div class="row">
-                    
                     <div class="col-md">
                         <label for="" class="mt-3 mb-2">Jenis/Bidang Usaha</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select id="jenis-usaha" class="form-select" aria-label="Default select example">
                             <option selected>Pilih Jenis Usaha</option>
                             <option value="1">Pertanian</option>
                             <option value="2">Perkebunan</option>
@@ -106,7 +104,11 @@
                             <option value="8">Perdagangan</option>
                             <option value="9">Pariwisata</option>
                             <option value="10">Perdagangan Jasa</option>
+                            <option value="11">Lainnya</option>
                         </select>
+                        <div id="jenis-usaha-opt" class="mt-2" style="display: none;">
+                            <input type="text" class="form-control" placeholder="masukan jenis usaha">
+                        </div>
                     </div>
 
                     <div class="col-md">
@@ -114,6 +116,7 @@
                     </div>
 
                 </div>
+                <!-- End Tempat Usaha -->
 
                 <!-- Penanggung Jawab Usaha/Kantor -->
                 <div class="row">
@@ -142,8 +145,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- alamat -->
                 <div class="row">
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Tempat / Tanggal Lahir</label>
@@ -195,7 +196,6 @@
 
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md">
                         <label for="" class="mt-3 mb-2">Suku</label>
@@ -213,16 +213,14 @@
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                 </div>
-
-                <!-- alamat -->
                 <div class="row mt-4">
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3"
                             style="margin-bottom: 1px;">Alamat</label>
                         <input type="text" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="alamat lengkap">
-                        <br>.
-                        <div class="row">
+                        <br>
+                        <div class="row" style="margin-left: 0.75em">
                             <div class="col">
                                 <label for="exampleInputEmail1" class="form-label mt-1">RT</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -236,13 +234,13 @@
                                 <br>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
+                        <div class="row" style="margin-left: 0.75em">
+                            <div class="col-12 col-sm-6">
                                 <label for="exampleInputEmail1" class="form-label mt-1">Desa / Kelurahan</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="masukan nama desa/kelurahan">
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-6">
                                 <label for="exampleInputEmail1" class="form-label mt-1">Kecamatan</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="masukan nama kecamatan">
@@ -250,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- end alamat -->
+                <!-- End Penanggung Jawab Usaha/Kantor -->
 
                 <!-- Penanggung Jawab Keamanan -->
                 <div class="row">
@@ -262,17 +260,13 @@
                         <label for="exampleInputEmail1" class="form-label mt-3">Nama</label>
                         <input type="text" placeholder="masukan nama" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
-
                     </div>
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Tempat / Tanggal Lahir</label>
                         <input type="text" placeholder="masukan nama tempat lahir" class="form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
-
                     </div>
                 </div>
-
-                <!-- alamat -->
                 <div class="row">
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3"
@@ -280,7 +274,7 @@
                         <input type="text" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="alamat Lengkap">
                         <br>
-                        <div class="row" style="margin-left: 0.5em">
+                        <div class="row" style="margin-left: 0.75em">
                             <div class="col">
                                 <label for="exampleInputEmail1" class="form-label mt-1">RT</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -294,7 +288,7 @@
                                 <br>
                             </div>
                         </div>
-                        <div class="row" style="margin-left: 0.5em">
+                        <div class="row" style="margin-left: 0.75em">
                             <div class="col-12 col-sm-6">
                                 <label for="exampleInputEmail1" class="form-label mt-1">Desa / Kelurahan</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -308,32 +302,27 @@
                         </div>
                     </div>
                 </div>
-                <!-- end alamat -->
+                <!-- End Penanggung Jawab Keamanan -->
 
+                <!-- Jumlah Karyawan atau Pegawai -->
                 <div class="row">
-                    <h5 class="mt-5"><li>Jumlah Karyawan atau Pegawai</li></h5>
-
+                    <h5 class="mt-5"><li>Jumlah Karyawan/Pegawai</li></h5>
                     <hr>
-
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Jumlah Pegawai WNI</label>
                         <input type="number" name="angka" placeholder="masukan jumlah pegawai WNI" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
-
                     </div>
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Jumlah Pegawai WNA</label>
                         <input type="number" name="angka" placeholder="masukan jumlah pegawai WNA" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
-
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md">
                         <label for="" class="mt-3">Asrama / Mess</label>
                         <br>
-
                         <div class="form-check form-check-inline mt-3">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mess"
                                 value="option1">
@@ -346,8 +335,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- alamat kantor -->
                 <div class="row">
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3" style="margin-bottom: 1px;">Alamat
@@ -355,7 +342,7 @@
                         <input type="text" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="alamat lengkap">
                         <br>
-                        <div class="row" style="margin-left: 0.5em">
+                        <div class="row" style="margin-left: 0.75em">
                             <div class="col">
                                 <label for="exampleInputEmail1" class="form-label mt-1">RT</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -369,7 +356,7 @@
                                 <br>
                             </div>
                         </div>
-                        <div class="row" style="margin-left: 0.5em">
+                        <div class="row" style="margin-left: 0.75em">
                             <div class="col-12 col-sm-6">
                                 <label for="exampleInputEmail1" class="form-label mt-1">Desa / Kelurahan</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -384,164 +371,37 @@
                     </div>
                     
                 </div>
-                <!-- end alamat kantor -->
+                <!-- End Jumlah Karyawan atau Pegawai -->
 
                 <!-- Data Karyawan/Pegawai -->
                 <div class="row">
 
                     <h5 class="mt-5"><li>Data Karyawan/Pegawai</li></h5>
-
                     <hr>
-
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Nama Pegawai</label>
                         <input type="text" placeholder="masukan nama lengkap pegawai" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
                     </div>
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Tempat/Tanggal Lahir</label>
                         <input type="text" placeholder="masukan tempat tanggal lahir pegawai" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-
                 </div>
-
                 <div class="row">
-
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Jabatan/Bagian</label>
                         <input type="text" placeholder="masukan nama jabatan/bagian" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
                     </div>
                     <div class="col-md">
                         <label for="exampleInputEmail1" class="form-label mt-3">Nomer Telepon/HP</label>
                         <input type="text" placeholder="masukan nomor yang dapat dihubungi" class="form-control" 
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-
                 </div>
-                
-
-                <!-- Petugas -->
-                <div class="row">
-                    <h5 class="mt-5"><li>Petugas</li></h5>
-                    <hr>
-
-                    <div class="col-md">
-                        <label for="exampleInputEmail1" class="form-label mt-3">Nama</label>
-                        <input type="text" placeholder="masukan nama kepala keluarga" class="form-control" 
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="col-md">
-                        <label for="exampleInputEmail1" class="form-label mt-3">Pangkat / NRP</label>
-                        <input type="text" placeholder="masukan nama pangkat/NRP" class="form-control" 
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md">
-                        <label for="exampleInputEmail1" class="form-label mt-3">Nomer Telpon/HP</label>
-                        <input type="text" placeholder="masukan nomor yang dapat dihubungi" class="form-control" 
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="col-md">
-                        
-                    </div>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md">
-                        <label for="exampleInputEmail1" class="form-label mt-3"
-                            style="margin-bottom: 1px;">Alamat Rumah</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan alamat rumah ">
-                        <br>
-                        <div class="row" style="margin-left: 0.5em">
-                            <div class="col">
-                                <label for="exampleInputEmail1" class="form-label mt-1">RT</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan RT">
-                                <br>
-                            </div>
-                            <div class="col">
-                                <label for="exampleInputEmail1" class="form-label mt-1">RW</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan RW">
-                                <br>
-                            </div>
-                            <div class="col">
-                                <label for="exampleInputEmail1" class="form-label mt-1">Lingkungan</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan lingkungan">
-                                <br>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-left: 0.5em">
-                            <div class="col-12 col-sm-6">
-                                <label for="exampleInputEmail1" class="form-label mt-1">Desa / Kelurahan</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan nama desa/kelurahan">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <label for="exampleInputEmail1" class="form-label mt-1">Kecamatan</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan nama kecamatan">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-
-                    <div class="col-md">
-                        <label for="exampleInputEmail1" class="form-label mt-3"
-                            style="margin-bottom: 1px;">Alamat Kantor</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan alamat kantor">
-                        <br>
-                        <div class="row" style="margin-left: 0.5em">
-                            <div class="col">
-                                <label for="exampleInputEmail1" class="form-label mt-1">RT</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan RT">
-                                <br>
-                            </div>
-                            <div class="col">
-                                <label for="exampleInputEmail1" class="form-label mt-1">RW</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan RW">
-                                <br>
-                            </div>
-                            <div class="col">
-                                <label for="exampleInputEmail1" class="form-label mt-1">Lingkungan</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan lingkungan">
-                                <br>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-left: 0.5em">
-                            <div class="col-12 col-sm-6">
-                                <label for="exampleInputEmail1" class="form-label mt-1">Desa / Kelurahan</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan nama desa/kelurahan">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <label for="exampleInputEmail1" class="form-label mt-1">Kecamatan</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="masukan nama kecamatan">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-
-
-                    </div>
-                </div>
+                <!-- End Data Karyawan/Pegawai-->
 
                 <!-- Catatan Kunjungan Usaha/Kantor/Keamanan -->
                 <div class="row">
@@ -560,8 +420,7 @@
                         </div>
 
                     </div>
-                    
-                    <div class="row">
+                    <div class="row ml-2 ml-sm-0">
                         <div class="col-md">
                     		<label for="" class="mt-3 mb-2">Kunjungan Ke-</label>
                     		<select class="form-select" aria-label="Default select example">
@@ -574,12 +433,11 @@
                     	</div>
                         <div class="col-md">
                             <label for="exampleInputEmail1" class="form-label mt-3">Nama</label>
-                            <input type="text" placeholder="masukan nama" class="form-control" 
+                            <input type="text" placeholder="masukan nama penerima kunjungan" class="form-control" 
                                 id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                     </div>
-        
-                    <div class="row">
+                    <div class="row ml-2 ml-sm-0">
                         <div class="col-md">
                             <h6 class="mt-5 mb-2">Paraf Petugas</h6>
                             <hr>
@@ -607,30 +465,24 @@
                         </div>
                         </div>
                     </div>
-                    
                     <div class="row">
+                        
                     <h5 class="mt-5"><li>Catatan/temuan selama pelaksanaan kunjungan ke-</li></h5>
                     <hr>
-                    
-    
                     </div>
-
                 </div>
+                <!-- End Kunjungan Usaha/Kantor/Keamanan -->
         
-        
-                    <div class="button mt-3 flex flex-row-reverse">
-                        <button style="background: #F92B13; color: #fff;">Batal</button>
-                        <button style="background: #A0B8E0; color: #1E4588;">Simpan</button>
-                    </div>
-
+                <!-- Form Button-->
+                <div class="button mt-3 flex flex-row-reverse">
+                    <button style="background: #F92B13; color: #fff;">Batal</button>
+                    <button style="background: #A0B8E0; color: #1E4588;">Simpan</button>
+                </div>
+                <!-- Form Button -->
             </form>
         </div>
     </main>
-    <!-- end main -->
 
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -645,36 +497,29 @@
         body {
             background: rgb(208, 229, 242);
         }
-
         form {
             padding: 20px 35px;
             background: #fff;
         }
-
         button {
             padding: 10px 30px;
             border-radius: 10px;
             border: 0;
             margin-left: 10px;
             font-weight: bold;
-
         }
-
         /* label */
         hr {
             background: #1E4588;
         }
-
         label,
         h6 {
             color: #1E4588;
             font-weight: 500;
         }
-
         ::placeholder {
             color: #86A1CE !important;
         }
-
         input[type="text"],
         input[type="number"],
         input[type="date"],
@@ -684,12 +529,10 @@
             border-radius: 0 !important;
             padding-left: 0;
         }
-
         input:focus,
         select:focus {
             border-bottom: 2px solid #1E4588 !important;
         }
-
         /* disable ring */
         textarea:focus,
         textarea.form-control:focus,
@@ -705,23 +548,30 @@
         [contenteditable].form-control:focus {
             box-shadow: inset 0 -1px 0 #ddd;
         }
-
-
         @media screen and (max-width:768px) {
             form {
                 padding: 20px;
             }
-
             /* button */
             button {
                 width: 47%;
             }
-
             button:nth-child(1) {
                 margin-left: 0 !important;
             }
         }
     </style>
+    <script>
+        $(document).ready( function() {
+            $('#jenis-usaha').change( function() {
+                if($('#jenis-usaha option:selected').text() === "Lainnya") {
+                    $('#jenis-usaha-opt').show();
+                } else {
+                    $('#jenis-usaha-opt').hide();
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
