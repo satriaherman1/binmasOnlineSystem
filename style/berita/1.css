@@ -1,0 +1,136 @@
+body{
+    background: rgb(208, 229, 242);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* top nav */
+nav{
+    background: #274C77;
+    padding: 10px 0;
+}
+
+
+#user{
+    border: 2px solid #fff;
+    border-radius: 100px;
+}
+
+/* main content */
+main{
+
+    box-sizing: border-box;
+    
+}
+
+small{
+    font-weight: 400;
+    color: #999;
+}
+
+.share{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    width: 38px;
+    left: 0;
+    border-radius: 100px;
+    font-size: 18px;
+    margin-left: 20px;
+    height: 38px;
+    margin-top: 10px;
+}
+
+
+.facebook{
+    background: #3b5998;
+} 
+
+.whatsapp{
+    background: #0dc143;
+    margin-left: 10px;
+}
+
+/* line */
+.line-container{
+    height: 4px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+.line1{
+    width: 20%;
+    height: 100%;
+    background: #274C77;
+}
+
+.line2{
+    width: 30%;
+    height: 100%;
+    background: #5193e0;
+}
+
+.line3{
+    width: 50%;
+    height: 100%;
+    background: #c1ddfd;
+}
+
+/* main komentar */
+.main-komentar .user{
+    font-weight: 500;
+    color: #5193e0;
+}
+
+
+@media screen and ( max-width:768px){
+      nav{
+        padding: 10px 0;
+    }
+
+    .nav-left{
+      justify-content:flex-end !important;
+    }
+
+    .nav-text-large{
+        font-size: 17px !important;
+    }
+
+    .nav-text-small{
+        font-size: 9px !important;
+    }
+
+
+    .nama-atas{
+        display: none;
+    }
+
+    .logo{
+        width: 43px !important;
+    }
+
+    #user{
+        width: 43px !important;
+    }
+
+    /* content */
+    .side-content{
+        margin-left: 0 !important;
+        margin-top: 100px;
+    }
+
+
+}

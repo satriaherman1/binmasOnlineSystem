@@ -1,0 +1,546 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binmas Online System</title>
+    
+    <!--icon-->
+    <link rel="icon" href="../img/binmas.svg">
+    
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+    <!-- Preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+    </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: #091833;">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link text-center">
+        <span class="logo-lg">
+        <h5>Binmas Online System</h5>
+    </span>
+    </a>
+
+    <!-- Sidebar -->
+    <!-- Sidebar Menu -->
+        <nav class="mt-2 mb-5">
+        <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <ul class="nav nav-treeview">
+              <li class="nav-item" style=" font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <a href="index.html" class="nav-link">
+                  <i class="far fa-building nav-icon"></i>
+                  <p>Registrasi</p>
+                </a>
+              </li>
+
+              <li class="nav-item" style="font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                <a href="./index.html" class="nav-link">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Login</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+        <!-- /.sidebar-menu -->
+    <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                    <h1 class="m-0" style="font-weight: 700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Daftar Registrasi BUJP</h1>
+                    <hr class="d-blokc d-md-none">
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="fas fa-home" style="align-items: center; padding: 15px;">
+                            <a href="index.html" class="text-body" style="font-family: sans-serif;">Home</a>
+                            </li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <!-- input search -->
+        <div class="card" style="width: auto; padding-left: 20px; padding-right: 10px;">
+            <section class="content">
+              <div class="card">
+                <h3 class="m-0" style="font-weight: 700; padding-left: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 10px;"> Profil Perusahaan </h3>
+                <div class="container-fluid">
+                      <div class="row" >
+                          <div class="col-3" style="padding-top: 5px;">
+                              <p>NIB</p>
+                          </div>
+                          <div class="col">
+                              <div class="input-group-append">
+                              <input type="text" class="form-control" placeholder="Nomor Induk Berusaha">
+                              <button class="input-group-text bg-info">Cari</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3" style="padding-top: 5px;">
+                              <p>Nama Perusahaan</p>
+                          </div>
+                          <div class="col">
+                              <input type="text" class="form-control" placeholder="Wajib Diisi">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3" style="padding-top: 5px;">
+                              <p>Alamat</p>
+                          </div>
+                          <div class="col" role="alert">
+                              <input type="text" class="form-control" placeholder="Wajib Diisi">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3" style="padding-top: 5px;">
+                              <p>Jenis Usaha</p>
+                          </div>
+                          <div class="col" role="alert" style="padding-bottom: 5px;">
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault">BUJP Bidang Konsultasi Keamanan</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault">BUJP Bidang Penerapan Peralatan Keamanan</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault">BUJP Bidang Pelatihan Keamanan</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault">BUJP Bidang Kawal Angkut Uang dan Barang Berharga</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault">BUJP Bidang Penyedia Tenaga Keamanan</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                  <label class="form-check-label" for="flexSwitchCheckDefault">BUJP Bidang Penyedia Satwa (K-9)</label>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-3" style="padding-top: 5px;">
+                              <p>Nama Polda</p>
+                          </div>
+                          <div class="col" style="padding-top: 5px;">
+                              <select id="polda" name="polda.id" class="form-control polda_id" data-placeholder=" Select...">
+                                  <option value="">Pilih</option>
+                                  <option data-province="1b75e5cb-8508-4dc5-ba5e-aa1084003588" value="1b769094-79ab-43cb-b4cd-d01a4f27c035">Polda Aceh</option>
+                                  <option data-province="2081694a-9436-4033-97bd-f667a50c0c3b" value="6cdf1d44-2ce9-401e-b64e-bb816ed94037">Polda Sumatera Utara</option>
+                                  <option data-province="1c7a7d53-bca2-43ae-9e66-28041b3f6dbb" value="d5da1633-b9a1-40a0-b71a-4fd4c915d3b4">Polda Sumatera Barat</option>
+                                  <option data-province="dd6c1cc1-2e5d-4d17-b412-00f2a76a0f02" value="2334381d-85cc-43d6-a93a-c5d567258f8c">Polda Jambi</option>
+                                  <option data-province="117b84a5-efa4-4747-9035-51cb7e63aac3" value="60c94ccf-5578-4bff-96fb-51894c5d216c">Polda Riau</option>
+                                  <option data-province="afef635c-08bb-4b7c-9d2b-1e854b91a7a3" value="ba29fd4a-1942-4150-8505-14e16f564458">Polda Kepri</option>
+                                  <option data-province="4d691d8c-6dc4-42e2-be4c-f360d83952f5" value="ddacdb0b-fdfc-4c37-a41c-ba3d8ad1bdea">Polda Kepulauan Bangka Belitung</option>
+                                  <option data-province="f6e29e7d-e594-44b5-9f99-bebde309d4fb" value="5455cba0-d109-4d66-a2fb-2a7c6ead412a">Polda Sumatera Selatan</option>
+                                  <option data-province="61a8525f-438e-45c9-97f9-f511393b3dde" value="27ad2fcd-2006-4447-b565-0d9d8d8350a4">Polda Bengkulu</option>
+                                  <option data-province="e8911eb3-58f2-438c-8b0f-ba2b7df9ca89" value="3dd73b19-68d8-4546-b2d1-043dd40b5ee3">Polda Lampung</option>
+                                  <option data-province="49419bf3-63ff-4523-a1cc-3e9627fef9a8" value="5bd0cb8c-0e8b-49fc-ac14-e6a35ad697ae">Polda Metro Jaya</option>
+                                  <option data-province="67276751-ffe4-4e6c-849c-7193c5de91f0" value="0c6cf32d-abf1-4722-852c-b21bddcda810">Polda Banten</option>
+                                  <option data-province="eebf9e8b-3329-4e99-9c80-cf2fd6297af9" value="2ab54f91-a0e7-4935-90d2-2ab872726254">Polda Jawa Tengah</option>
+                                  <option data-province="bd8e5646-e399-4275-adbf-4a15d3e68af1" value="c34b1999-21fd-434d-a9be-038094ec67a0">Polda Diy</option>
+                                  <option data-province="e182de90-516c-4500-bfbd-43f504831fcb" value="20e5a3fc-8f92-4635-9099-a755450803e9">Polda Jawa Timur</option>
+                                  <option data-province="0a6ae1d2-e3e6-4b1b-a58c-a03f8033feef" value="54230a2d-d7e6-4a41-bc81-7022253fd51b">Polda Kalimantan Timur</option>
+                                  <option data-province="8dadb235-12ad-4dfe-9975-6d45374bafaa" value="8e0e943d-d6c4-4543-bbc5-9cb181aa564a">Polda Bali</option>
+                                  <option data-province="403f2600-72ff-4db8-a888-964530da6948" value="f958bf70-0bdf-4d8a-8080-56a22df9445d">Polda Nusa Tenggara Barat</option>
+                                  <option data-province="5f96a3c0-d11d-4ce0-adec-b8c70cb0a8a8" value="ecb9bb8e-4a63-43ba-9f41-a0d396fef0ff">Polda Nusa Tenggara Timur</option>
+                                  <option data-province="7d103fa3-28f8-420d-a9da-292553f7c6aa" value="1641d1db-760c-4326-8c7a-81bef7cdb541">Polda Kalimantan Barat</option>
+                                  <option data-province="b7ef00fa-5fa7-4302-835f-b279722fb46a" value="c30e22e5-9281-4842-9e75-d219d128dfd2">Polda Kalimantan Tengah</option>
+                                  <option data-province="30eca6e6-4309-495c-8668-fba48bed3282" value="069e3653-1f9c-4cc4-b652-447e617170a0">Polda Kalimantan Selatan</option>
+                                  <option data-province="bdad8543-0b15-4c72-8515-620a05608a18" value="4ed40b1a-720b-4dea-a2c1-73b9486bddb9">Polda Sulawesi Utara</option>
+                                  <option data-province="a2bc2711-9b22-4ef1-bf0e-b40e2eaa0b8a" value="20d4b676-d28d-4f86-86b8-a2b98b9f3f1e">Polda Gorontalo</option>
+                                  <option data-province="71f9ef6b-922f-4290-aaaa-02d994c59e22" value="b95bf2c3-fee6-4f4f-9288-6b7f7eb78027">Polda Sulawesi Tengah</option>
+                                  <option data-province="dcad9b31-dc30-4610-bd4a-c23e47cb759f" value="7dae792d-28a0-4464-bd8b-07923bba2f56">Polda Sulawesi Tenggara</option>
+                                  <option data-province="05088225-41ae-4e4c-b47c-332e4bee33d6" value="f7803aa2-bd6e-4ae9-b405-9cfbd9a10e84">Polda Sulawesi Selatan</option>
+                                  <option data-province="f335b23c-75e4-4e44-b609-6629782f0187" value="5215ed5e-d680-4e6c-a3ea-fc66cdbc7a78">Polda Maluku</option>
+                                  <option data-province="e2df7dde-6040-479e-b2bb-735083784a45" value="835ba12b-9d2d-4b75-957d-e2eadf2f15aa">Polda Malut</option>
+                                  <option data-province="523091fa-6f25-444b-b621-7380e4001a93" value="f340237b-c108-4309-9f0b-db279c2dee1e">Polda Pabar</option>
+                                  <option data-province="055254fe-e69f-41d7-983f-a71dd8e44fc0" value="f61ad677-10d7-44fb-98af-a07cbdd127e7">Polda Papua</option>
+                                  <option data-province="533676a4-6fe1-4093-8dd1-64aa399e12c7" value="69dbbe86-6725-4908-94c4-6451f5aacd4f">Polda Kalimantan Utara</option>
+                                  <option data-province="49419bf3-63ff-4523-a1cc-3e9627fef9a8" value="d160cb8c-c5fe-4441-b00d-8542436b306b">Polda Jawa Barat</option>
+                                  <option data-province="862b088c-1ba4-4a86-b7a3-98d498685f12" value="d685ff95-5741-4f7b-adb9-2d7e768efbba">Polda Sulawesi Barat</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </di>
+              <div class="card">
+                    <h3 class="m-0" style="font-weight: 700; padding-left: 5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 10px;"> Unggah Berkas </h3>
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Surat Permohonan</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-2">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02" style="padding-bottom: 10px;">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Struktur Organisasi</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Daftar Riwayat Hidup Pimpinan</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>KTP</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Nomor Pokok Wajib Pajak</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Surat Pernyataan Bermaterai Tidak Menggunakan Tenaga Asing</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Surat Pernyataan Bermaterai menggunakan Seragam Satpam</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Standar Operasional Prosedur</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Standar Operasional Prosedur</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Keanggotaan Asosiasi</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Surat Izin Operasional</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Foto Surat Rekomendasi Dari Polda</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Foto Sertifikat Tenaga Ahli Khusus Bidang Usaha Jasa Konsultasi</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-blokc d-md-none">
+                    <div class="row">
+                        <div class="col-3" style="padding-top: 5px;">
+                            <p>Foto Sertifikat Gada Utama Milik CEO/Pemilik, Dirut Atau Direktur</p>
+                        </div>
+                        <div class="col" role="alert">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih File</label>
+                                </div>
+                            </div>
+                            <div style="opacity: 50%;">
+                                <p>Hanya file dengan format PDF, XLS, XLSX, DOC, DOCX, JPG, JPEG, PNG. Ukuran file maks 5 MB.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="position: rigth; padding-bottom: 30px; ;">
+                            <button type="button" class="btn btn-outline-success btn-lg pull-right" >Simpan</button>
+                            <button type="button" class="btn btn-danger btn-lg pull-right" style="padding-right: 20px; margin-right: 20px;">Kembali</button>
+                        </div>
+                    </div>
+              </div>
+
+            </section>
+        </div>
+    <!-- /.content -->
+
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 3.1.0-rc
+    </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+    $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../ist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../dist/js/pages/dashboard.js"></script>
+    </body>
+    </html>
