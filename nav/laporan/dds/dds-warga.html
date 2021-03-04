@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../../../style/footer/nav/laporan/dds/dds-warga.css">
     <title>Binmas Online System</title>
 </head>
 
@@ -158,7 +159,8 @@
                 <div class="row">
                     <div class="col-md">
                         <label for="alamat1" class="form-label mt-3" style="margin-bottom: 1px;">Alamat</label>
-                        <input type="text" class="form-control" id="alamat1" placeholder="alamat lengkap">
+                        <input type="text" class="form-control" id="alamat1"
+                            placeholder="nama jalan, nama perumahan, nama apartemen, dll">
 
                         <div class="row mt-3">
                             <div class="col">
@@ -192,114 +194,18 @@
                     </div>
                 </div>
 
-                <div class="row mt-5">
+                <h5 class="mt-5">
+                    <li>Anggota Keluarga/Penghuni Rumah </li>
+                </h5>
 
-                    <h5>
-                        <li>Anggota Keluarga/Penghuni Rumah Lainnya</li>
-                    </h5>
-                    <hr>
-                    <br>
+                <div class="anggota-keluarga">
 
-                    <div class="col-md">
-                        <label for="" class="mt-3 mb-2">Jumlah Anggota Keluarga</label>
-                        <input type="text" class="form-control" maxlength="2"
-                            placeholder="masukan jumlah anggota keluarga contoh = 1" id="jumlahAnggotaKeluarga">
-                    </div>
-
-                    <div class="col-md">
-
-                        <label for="exampleInputEmail1" class="form-label mt-3">Nama</label>
-                        <input type="text" class="form-control" placeholder="Nama Anggota Keluarga"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-
-
-                    </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-md">
-                        <label for="" class="mt-3">Jenis Kelamin</label>
-                        <br>
-
-                        <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="laki-laki2"
-                                value="laki-laki">
-                            <label class="form-check-label" for="laki-laki2">Laki - Laki</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="perempuan2"
-                                value="perempuan">
-                            <label class="form-check-label" for="perempuan2">Perempuan</label>
-                        </div>
-                    </div>
-
-                    <div class="col-md">
-                        <label for="" class="mt-3 mb-2">Hubungan </label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih Hubungan </option>
-                            <option value="1">Ibu</option>
-                            <option value="2">Anak Ke-1</option>
-                            <option value="3">Anak ke-2</option>
-                            <option value="3">Nenek </option>
-                            <option value="3">Kakek</option>
-
-                        </select>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md">
-
-                        <label for="exampleInputEmail1" class="form-label mt-3">Nomor Telepon</label>
-                        <input type="tel" maxlength="12" class="form-control"
-                            placeholder="masukan nomor yang dapat dihubungi" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
+                <br>
+                <button type="button" style="background: #1E4588; color: #fff;" onclick="add()">Tambah</button>
+                <button type="button" style="background: #F92B13; color: #fff;" onclick="remove()">Hapus</button>
 
 
-                    </div>
-
-                    <div class="col-md">
-                        <label for="" class="mt-3 mb-2">Tempat Lahir</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih Tempat Lahir</option>
-                            <option value="1">Jepara</option>
-                            <option value="2">Semarang</option>
-                            <option value="3">Salatiga</option>
-                            <option value="3">Jakarta</option>
-                            <option value="3">Solo</option>
-                            <option value="3">Yogyakarta</option>
-                            <option value="3">Lainnya</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md">
-                        <label for="exampleInputEmail1" class="form-label mt-3">Tanggal Lahir</label>
-                        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="col-md">
-                        <label for="" class="mt-3 mb-2">Status Pekerjaan</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih Status Pekerjaan</option>
-                            <option value="1">Sudah Bekerja</option>
-                            <option value="2">Belum Bekerja</option>
-                            <option value="3">Sekolah</option>
-
-                        </select>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!--<div class="col-md">-->
-                    <!--    <label for="exampleInputEmail1" class="form-label mt-3">Alamat Sekolah</label>-->
-                    <!--    <input type="text" class="form-control" placeholder="masukan Alamat Sekolah" id="exampleInputEmail1" aria-describedby="emailHelp">-->
-                    <!--</div>-->
-                    <!--<div class="col-md">-->
-
-                    <!--</div>-->
-                </div>
                 <div class="row">
                     <br>
                     <h5 class="mt-5 mb-2">
@@ -557,9 +463,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="button mt-3 flex flex-row-reverse">
-                    <button style="background: #F92B13; color: #fff;">Batal</button>
-                    <button style="background: #A0B8E0; color: #1E4588;">Simpan</button>
+                <div class="button mt-3 d-flex justify-content-end">
+                    <div>
+                        <button style="background: #F92B13; color: #fff;">Batal</button>
+                        <button style="background: #A0B8E0; color: #1E4588;">Simpan</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -581,109 +489,7 @@
     <!--internal script-->
     <script src="../../../script/nav/laporan/dds/dds-warga.js"></script>
 
-    <!-- internal style -->
-    <style>
-        body {
-            background: rgb(208, 229, 242);
-        }
 
-        form {
-            padding: 20px 35px;
-            background: #fff;
-        }
-
-        button {
-            padding: 10px 30px;
-            border-radius: 10px;
-            border: 0;
-            margin-left: 10px;
-            font-weight: bold;
-
-        }
-
-        /* label */
-        hr {
-            background: #1E4588;
-        }
-
-        label,
-        h6 {
-            color: #1E4588;
-            font-weight: 500;
-        }
-
-        ::placeholder {
-            color: #86A1CE !important;
-        }
-
-        /* card */
-        .card {
-            border: none !important;
-        }
-
-        .card-header {
-            margin-top: 4px;
-            background: none !important;
-            border-right: 1.6px solid #1E4588;
-            border-left: 1.6px solid #1E4588;
-            border-top: 1.6px solid #1E4588;
-        }
-
-        .card .card-body textarea {
-            margin-top: -3px;
-        }
-
-        input[type="text"],
-        input[type="tel"],
-        input[type="date"],
-        select {
-            border: none !important;
-            border-bottom: 1px solid #1E4588 !important;
-            border-radius: 0 !important;
-            padding-left: 0;
-        }
-
-        input:focus,
-        select:focus {
-            border-bottom: 2px solid #1E4588 !important;
-        }
-
-        textarea {
-            border: 1.6px solid #1E4588 !important;
-        }
-
-        /* disable ring */
-        textarea:focus,
-        textarea.form-control:focus,
-        input.form-control:focus,
-        input[type=text]:focus,
-        input[type=password]:focus,
-        input[type=email]:focus,
-        input[type=number]:focus,
-        [type=text].form-control:focus,
-        [type=password].form-control:focus,
-        [type=email].form-control:focus,
-        [type=tel].form-control:focus,
-        [contenteditable].form-control:focus {
-            box-shadow: inset 0 -1px 0 #ddd;
-        }
-
-
-        @media screen and (max-width:768px) {
-            form {
-                padding: 20px;
-            }
-
-            /* button */
-            button {
-                width: 47%;
-            }
-
-            button:nth-child(1) {
-                margin-left: 0 !important;
-            }
-        }
-    </style>
 </body>
 
 </html>
