@@ -291,6 +291,8 @@ nav{
     color: #fff;
     outline: none;
     border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 /* end table */
