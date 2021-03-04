@@ -285,12 +285,14 @@ nav{
 
 
 .unduh{
-    padding: 6px 20px;
+    padding: 8px 20px;
     border: none;
     background: #1E4588;
     color: #fff;
     outline: none;
     border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 /* end table */
