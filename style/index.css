@@ -14,6 +14,7 @@ body{
 /*  */
 
 
+
 /* top nav */
 nav{
     background: #274C77;
@@ -277,15 +278,9 @@ nav{
 
 
 /* table */
-thead{
-    border: 3px solid #A7BEE5;
-    box-sizing: border-box;
-    padding: 2px 9px;
-    border-radius: 10px !important;
-}
 
-thead tr td{
-    white-space: nowrap;
+.unduh:hover{
+    color: #fff;
 }
 
 
