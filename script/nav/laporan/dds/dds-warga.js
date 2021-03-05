@@ -1,27 +1,23 @@
 
 // anggota keluarga
 const parent = document.querySelector('.anggota-keluarga')
+const jumlahKeluarga = document.querySelector('#jumlahAnggotaKeluarga')
+
 let i = 0
 
 const add = () => {
     i++
-    let el = ` <div><div class=" row">
-
-                        <hr>
+    let el = ` <div>
+                <div class=" row">
                         <br>
 
-                        <div class=" col-md">
-                            <label for="" class="mt-3 mb-2">Jumlah Anggota Keluarga</label>
-                            <input type="text" class="form-control" maxlength="2"
-                                placeholder="masukan jumlah anggota keluarga contoh = 1" id="jumlahAnggotaKeluarga">
-                        </div>
+                        
 
                         <div class="col-md">
 
                             <label for="exampleInputEmail1" class="form-label mt-3">Nama</label>
                             <input type="text" class="form-control" placeholder="Nama Anggota Keluarga"
                                 id="exampleInputEmail1" aria-describedby="emailHelp">
-
 
                         </div>
                     </div>
@@ -111,15 +107,30 @@ const add = () => {
 
                         <!--</div>-->
                     </div>
+                    <button type="button" class="d-block " style="margin-top:20px;margin-left:auto;padding: 7px 18px ; background: #F92B13; color: #fff;"
+                    onclick="remove()"><i class="fas fa-minus" style="font-size: 15px; "></i></button>
             </div> `
        
        
-        console.log(i)
+        
 
-    parent.innerHTML += el
+    parent.innerHTML += el;
+    jumlahKeluarga.value = ( parseInt(jumlahKeluarga.value) + 1);
+
 }
 
 const remove = () => {
     parent.removeChild(parent.lastElementChild);
+    jumlahKeluarga.value = ( parseInt(jumlahKeluarga.value) - 1);
     i--
+}
+
+
+// option for every select element
+const lainnya = (el , context) => {
+   if(el.value === "lainnya"){
+        el.parentElement.innerHTML = `<input type="text" placeholder="masukan ${context}" class="form-control"
+                                        name=${context} aria-describedby="emailHelp">`
+   }
+
 }
